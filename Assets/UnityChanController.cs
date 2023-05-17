@@ -104,7 +104,7 @@ public class UnityChanController : MonoBehaviour
 
        
         //Unityちゃんに速度を与える（変更）
-        this.myRigidbody.velocity = new Vector3(inputVelocityX, 0, velocityZ);
+        this.myRigidbody.velocity = new Vector3(inputVelocityX, inputVelocityY, velocityZ);
 
    
     }

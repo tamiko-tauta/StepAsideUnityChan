@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
-    //cameraのオブジェクト
-    private GameObject camera;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +19,5 @@ public class CoinController : MonoBehaviour
         //回転
         this.transform.Rotate(0, 3, 0);
 
-        //cameraのオブジェクトを取得
-        this.camera = GameObject.Find("Main Camera");
-
-        if (this.transform.position.z < this.camera.transform.position.z)
-        {
-            Destroy(this.gameObject);
-        }
     }
 }
